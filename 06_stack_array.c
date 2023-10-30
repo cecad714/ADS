@@ -58,14 +58,17 @@ void search()
 		if(STACK[i] == se)			
 		{
 			printf(" %d FOUND IN THE STACK\n\n ",se);
+			flag++;
 			break;
 		}
-		else
-			flag++;					
+							
 	}
 	if(flag==0)
+	{
 		printf(" %d NOT FOUND  IN THE STACK\n\n ",se);
+	}
 }
+
 
 int main()
 {
@@ -73,7 +76,8 @@ int main()
 	do
 	{
 	printf("STACK USING ARRAY");
-	printf("\n PRESS '1' FOR ADDING ELEMENTS TO THE STACK \n PRESS '2' FOR DELETING ELEMENTS FROM THE STACK\n PRESS '3' FOR DISPLAYING ELEMENTS FROM THE STACK \n PRESS '4' FOR SEARCHING AN ELEMENT FROM THE STACK\n  PRESS '5' FOR EXIT");  
+	printf("CHOOSE YOUR OPTION:");
+	printf("\n'1' FOR PUSH \n '2' FOR POP \n '3' FOR DISPLAY \n'4' FOR SEARCHING \n'5' FOR EXIT");  
 	scanf("%d",&choice);
 
 		switch (choice)
